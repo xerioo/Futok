@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>G9PGBI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <<link rel="stylesheet" type="text/css" href="static.styles/html_style.css">
+    </head>
+    <body>
+        <div th:insert="~{topbar::topbar}"></div>
+        <!--<div class="row">-->
+            <div id="indexLeftColumn" style="background-color:#ddd;">
+                <h2>Adatbevitel</h2>
+                <form method="get" action="uj_verseny">
+                    <input name="new_comp" type="submit" value="Új verseny">
+<!--                </form>
+                <form method="get" action="uj_futo">-->
+                    <input name="new_run" type="submit" value="Új futó">
+<!--                </form>
+                <form method="get" action="uj_eredmeny">-->
+                    <input name="new_res" type="submit" value="Új eredmények">
+                </form>
+            </div>
+            <div id="indexRightColumn" style="background-color:#ddd;">
+                <h2>Keresés</h2>
+                <form method="get" action="keres_verseny">
+                    <input type="submit" value="Verseny keresése">
+                </form>
+                <form method="get" action="keres_futo">
+                    <input type="submit" value="Futó keresése">
+                </form>
+
+            </div>
+        <!--</div>-->
+    </body>
+</html>
